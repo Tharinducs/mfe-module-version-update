@@ -31,6 +31,48 @@ npm install
 yarn install
 ```
 
+## Development (Webpack)
+
+This repository was converted from a Vite scaffold to a custom Webpack configuration. The Webpack setup is used for local development and production builds.
+
+Quick steps to run the app locally with Webpack:
+
+1. (Optional) Make helper scripts executable:
+
+```bash
+chmod +x scripts/*.sh
+```
+
+2. Install dependencies (if you haven't already):
+
+```bash
+npm install
+```
+
+3. Start the development server (Webpack dev server):
+
+```bash
+npm run dev
+# or
+npm run start
+```
+
+The dev server runs on http://localhost:3000 by default and supports HMR.
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Build artifacts will be placed in the `dist/` folder.
+
+Notes:
+- The Webpack HTML template is `public/index.html`.
+- Babel configuration is in `.babelrc` and supports JSX with the automatic runtime.
+- See `webpack.config.js` for loader and devServer options (port, static folder, HMR).
+
+
 ## Configuration
 
 1. Create a `.env.local` file in the root directory

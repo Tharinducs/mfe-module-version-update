@@ -1,0 +1,29 @@
+{
+  "name": "mfe-module-version-update",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+  "start": "webpack serve --config webpack.config.cjs --mode development",
+  "dev": "npm run start",
+  "build": "webpack --config webpack.config.cjs --mode production",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "@babel/preset-react": "^7.24.0",
+    "babel-loader": "^9.1.0",
+    "css-loader": "^6.9.0",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.0"
+  }
+}

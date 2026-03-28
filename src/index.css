@@ -1,0 +1,27 @@
+:root{
+  --color-text-primary: #0f1720;
+  --color-text-secondary: #394047;
+  --color-text-tertiary: #6b7280;
+  --color-border-secondary: #d1d5db;
+  --color-border-tertiary: #e6e9ee;
+  --color-background-primary: #ffffff;
+  --color-background-secondary: #f8fafb;
+  --color-border-danger: #ffdddd;
+  --color-text-danger: #d04545;
+  --border-radius-sm: 6px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', 'Courier New', monospace;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--color-background-primary);
+  color: var(--color-text-primary);
+}
+
+/* Visual hover affordance for repo cards (used by RepoCard.jsx) */
+.repo-card:hover {
+  background: rgba(29,158,117,0.02);
+}
